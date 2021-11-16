@@ -1,31 +1,38 @@
 # Final Project-World Population Data
-- Dataset: World Population 1960-2018
+ 
+
+# Segment #1 deliverables:
+
+## Selected Topic
+World Population Data 
+
+
+### Description of source data
+
+- Dataset: World Population 1960-2018, 2020
   - https://www.kaggle.com/imdevskp/world-population-19602018?select=pop_worldometer_data.csv
 - This dataset includes each countries population, net change, land area, migrants, fertility rate, median age, urban population and world share % as of 2020.
 - This dataset includes additional csvs that include more specific data like female population percentage, population above age 65, population below age 14 and population density, all from about 1960-2017.
 
-## Population Data
- 
 
-Segment #1 deliverables:
+### Questions we hope to answer:
 
-Team members have drafted their project:
+* What variables in this dataset are predictive of a countries net population change?
+* How do these variables relate to each other with regard to population change?
+* What are the most important variables in this dataset to the outcome of net population change?
 
-Selected Topic
+## Chosen Database
 
-Description of their source data
+* Postgres
 
-Questions that they hope to answer
 
-Have created a GitHub Repo that includes:
+## An initial list of tables and columns 
 
-A README.md file
-A .gitignore file
-At least one branch for each team member
-Have selected a database engine (Postgres or MongoDB)
+![image](https://user-images.githubusercontent.com/86337475/141880865-0ccb4eb6-6e0b-4e18-8609-79aa7099d44d.png)
 
-An initial list of tables and columns (optional to use an ERD diagram)
 
-Have decided on Machine Learning Model(s). Classifiers vs Regression
+## Machine Learning Models
 
-Have decided if they will be doing live predictions
+* We will explore options of multilinear regression in training and testing our dataset.
+
+* No live predictions will be included in the project.
