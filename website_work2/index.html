@@ -40,7 +40,7 @@
             <div class="learn">
 
                 <!-- You could hyperlink this down with a smooth scroll -->
-                <p> Let's Goooooooooo! </p>
+                <p> Let's Go! </p>
                 <i class="fas fa-chevron-down"></i>
             </div>
 
@@ -62,7 +62,7 @@
 
             <div class="learn">
                 <!-- You could hyperlink this down with a smooth scroll -->
-                <p> CHECK THIS SHIT OUT </p>
+                <p> CHECK IT OUT </p>
                 <i class="fas fa-chevron-down"></i>
             </div>
 
@@ -95,38 +95,42 @@
                 </div>
         </section>
 
-        <section class="fragment fragment-four">
+        <section class="fragment-viz">
 
-            <h3>TABLEAU STUFF GOES HERE</h3>
-            <hr class="title-underline">
-            <div class="container">
-                <div class="labels">
-                    <div class="tech">But</div>
-                    <div class="tech">It</div>
-                    <div class="tech">Isn't</div>
-                    <div class="tech">Quite</div>
-                    <div class="tech">Ready</div>
-                </div>
-            </div>
+            <h2>Tableau Visualizations</h2>
+
+        <div id="vizContainer"></div>
+        <script src="https://us-east-1.online.tableau.com/javascripts/api/tableau-2.min.js"></script>
+        <script>
+          var viz
+          function initViz() {
+            var containerDiv = document.getElementById("vizContainer"),
+            url = "https://public.tableau.com/views/World_Pop_Viz/ChangevsMedianAge?:language=en-US&:display_count=n&:origin=viz_share_link";
+      
+            viz = new tableau.Viz(containerDiv, url);
+          }
+          initViz();
+        </script>
+                    
 
         </section>
         <section class="fragment fragment-five">
-            <h3>Dinguses who did the work</h3>
+            <h3>Group</h3>
             <hr class="title-underline">
 
             <!-- Don't forget to swap out the universities and education to match your own-->
             <div class="container">
                 <h5> David Zellmer</h5>
-                <p class="credential"> Model Man</p>
-                <p> <a href="https://github.com/rattrapp">Github or whatever link</a>
+                <p class="credential"></p>
+                <p> <a href="https://github.com/rattrapp">Github</a>
                 </p>
                 <h5> Rosalie Maass</h5>
-                <p class="credential"> Database Wrangler</p>
-                <p> <a href="https://github.com/RosalieMaass">Github or whatever link</a>
+                <p class="credential"></p>
+                <p> <a href="https://github.com/RosalieMaass">Github</a>
                 </p>
                 <h5> Dan Pederson</h5>
-                <p class="credential"> Visual Turd</p>
-                <p> <a href="https://github.com/PirateSuit">Github or whatever link</a>
+                <p class="credential"></p>
+                <p> <a href="https://github.com/PirateSuit">Github</a>
                 </p>
 
             </div>

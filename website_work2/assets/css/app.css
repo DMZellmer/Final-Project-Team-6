@@ -13,6 +13,7 @@ h1 {
 h2 {
     font-weight: 400;
     font-size: 4rem;
+    text-align: center;
 }
 
 h3 {
@@ -206,4 +207,12 @@ h7 {
 .fragment-six .copyright {
     margin: 10px 0;
     font-size: 0.8rem;
+}
+
+.fragment-viz {
+    margin: auto;
+  width: 82%;
+  border: 3px solid green;
+  padding: 10px;
+  margin-bottom: 50px;
 }
