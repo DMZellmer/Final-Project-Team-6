@@ -83,3 +83,13 @@ A Random Forest Regressor was then fit to the dataset and evaluated for predicti
 
 
 This model performed well on the dataset, with an MSE logarithmically lower than the previous models. 
+
+## Summary of Results
+- When analyzing the data we found the two factors that seem to affect the percentage of yearly population change were fertiliy rate and median age. 
+- A higher fertility rate resulted in a higher percentage of yearly population change.
+- A higher median age resulted in a lower percentage of yearly population change.
+- The countries with the lowest fertility rates also had the lowest median age. 
+
+## Other Considerations
+- The Covid-19 pandemic made 2020 a unique year. 
+- If we were to do further analysis we would compare how the trends seen in 2020 were different from 2019. Specifically looking at differences in fertility rate, median age, net change and number of migrants.
