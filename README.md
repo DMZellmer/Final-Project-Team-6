@@ -1,11 +1,7 @@
-# Final Project-World Population Data
- 
-
-# Segment #1 deliverables:
+# Final Project
 
 ## Selected Topic
-World Population Data 
-
+### World Population Data 
 
 ### Description of source data
 
@@ -14,17 +10,11 @@ World Population Data
 - This dataset includes each countries population, net change, land area, migrants, fertility rate, median age, urban population and world share % as of 2020.
 - This dataset includes additional csvs that include more specific data like female population percentage, population above age 65, population below age 14 and population density, all from about 1960-2017.
 
-
 ### Questions we hope to answer:
 
 * What variables in this dataset are predictive of a country's net population change?
 * How do these variables relate to each other with regard to population change?
 * What are the most important variables in this dataset to the outcome of net population change?
-
-## Chosen Database
-
-* Postgres
-
 
 ## An initial list of tables and columns 
 
@@ -37,9 +27,6 @@ World Population Data
 
 * No live predictions will be included in the project.
 
-
-
-# Segment Two Deliverables
 
 ## Machine Learning
 
@@ -83,3 +70,20 @@ A Random Forest Regressor was then fit to the dataset and evaluated for predicti
 
 
 This model performed well on the dataset, with an MSE logarithmically lower than the previous models. 
+
+## Additional Data
+
+- From the original dataset we pulled additional migrant data to see what the percentage of the yearly change and percentage of total population was from migrants. 
+- This information did not have a strong correlation with the other data.
+
+## Summary of Results
+- When analyzing the data we found the two factors that seem to affect the percentage of yearly population change were fertiliy rate and median age. 
+- A higher fertility rate resulted in a higher percentage of yearly population change.
+- A higher median age resulted in a lower percentage of yearly population change.
+- The countries with the lowest fertility rates also had the lowest median age. 
+- With the exception of fertility rate and median age, none of the other features showed a strong correlation to yearly population change percentage. 
+
+
+## Other Considerations
+- The Covid-19 pandemic made 2020 a unique year. 
+- If we were to do further analysis we would use the trends seen in 2020 to compare to other years. Specifically looking at differences in fertility rate, median age, net change and number of migrants.
