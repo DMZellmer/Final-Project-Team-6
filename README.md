@@ -81,6 +81,8 @@ This model performed well on the dataset, with an MSE logarithmically lower than
 - A higher fertility rate resulted in a higher percentage of yearly population change.
 - A higher median age resulted in a lower percentage of yearly population change.
 - The countries with the lowest fertility rates also had the lowest median age. 
+- With the exception of fertility rate and median age, none of the other features showed a strong correlation to yearly population change percentage. 
+
 
 ## Other Considerations
 - The Covid-19 pandemic made 2020 a unique year. 
