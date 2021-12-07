@@ -20,40 +20,60 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/app.css" rel="stylesheet" />
     <title>World Population | Portfolio</title>
+
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
 </head>
 
-<body>
-
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Home</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Visualizations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#analysis">Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- No defined header section -->
 
     <!-- Main content goes here split into sections/fragments -->
-    
+
     <main>
 
         <!-- Utilizes flexbox styling not taught in class -->
         <section class="fragment fragment-one">
-            <div class="headers">
-                <h1> World Population </h1>
-                <h3> Predicting Population Change</h3>
-            </div>
 
-            <div class="learn">
+            <h1> World Population </h1>
+            <h2> Predicting Yearly Change</h2>
 
-                <!-- You could hyperlink this down with a smooth scroll -->
-                <p> Let's Go! </p>
-                <i class="fas fa-chevron-down"></i>
-            </div>
+
 
         </section>
-        <section class="fragment fragment-two">
+        <section class="fragment fragment-onetwo" id="about">
             <h2> Project <br />Overview </h2>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
+                        <br>
 
                         <!-- Edit this text with a brief intoduction / brand statement etc. -->
                         <h5>
-                            In this project, we are attempting to use 2020 world population data to see what, if any, factors can predict the percentage change in a given country's population from 2019 to 2020.
+                            In this project, we are attempting to use 2020 world population data to see what, if any,
+                            factors can be used to predict the percentage change in a given country's population from
+                            2019 to 2020.
                         </h5>
                     </div>
                 </div>
@@ -62,75 +82,111 @@
 
             <div class="learn">
                 <!-- You could hyperlink this down with a smooth scroll -->
+                <br> <br> <br> <br>
                 <p> CHECK IT OUT </p>
                 <i class="fas fa-chevron-down"></i>
             </div>
 
         </section>
+
+        <section class="fragment2 fragment-three" id="projects">
+            <br><br><br>
+            <section class="viztext">
+                Visualizations
+            </section>
+            <hr class="title-underline">
+            <div class="container carousel-container">
+                <img src="assets/images/World_Pop_cm.png">
+                <br>
+                <p>
+                    <h7> SUPER HOT HEAT MAP.</h7>
+                </p>
+            </div>
+        </section>
+
         <section class="fragment2 fragment-three">
             <br><br><br>
-            <h3>INSERT DATA VIZ LABEL HERE</h3>
+            <h3>Median Age vs Yearly Population Change</h3>
             <hr class="title-underline">
             <div class="container carousel-container">
-                <img src="assets/images/mordis.png">
-                    <br><p><h7> This is where we talk about the first visualization.</h7></p>
-                    </div>
+                <img src="assets/images/MedAge_vs_YearlyChange.PNG">
+                <br>
+                <p>
+                    <h7> The data show a negative correlation between the median age of a country's population and the
+                        rate of population growth.</h7>
+                </p>
+            </div>
         </section>
 
         <section class="fragment2 fragment-three">
-            <h3>INSERT DATA VIZ 2 LABEL HERE</h3>
+            <h3>Fertility Rate vs Yearly Population Change</h3>
             <hr class="title-underline">
             <div class="container carousel-container">
-                <img src="assets/images/mordis.png">
-                <br><p><h7> This is where we talk about the second visualization </h7></p>
-                </div>
+                <img src="assets/images/FertRate_vs_YearlyChange.PNG">
+                <br>
+                <p>
+                    <h7> Demonstrating a positive correlation, these data show that with a higher fertility rate, the
+                        percentage growth of a country's population tends to be higher. </h7>
+                </p>
+            </div>
         </section>
 
         <section class="fragment2 fragment-three">
-            <h3>INSERT DATA VIZ 3 LABEL HERE</h3>
+            <h3>Correlating both Fertility Rate and Median Age with Yearly Population Change</h3>
             <hr class="title-underline">
             <div class="container carousel-container">
-                <img src="assets/images/mordis.png">   
-                <br><p><h7>This is where we talk about the third visualization. This is where we talk about the third visualization.This is where we talk about the third visualization.This is where we talk about the third visualization.This is where we talk about the third visualization.This is where we talk about the third visualization.This is where we talk about the third visualization.This is where we talk about the third visualization.This is where we talk about the third visualization.This is where we talk about the third visualization.</h7></p>
-                </div>
+                <img src="assets/images/3D_fUn_TiMeS.PNG">
+                <br>
+                <p>
+                    <h7>A country with a higher fertility rate is likely to have a lower median age, and thus again
+                        correlate with a higher percentage change in population.</h7>
+                </p>
+            </div>
         </section>
 
         <section class="fragment-viz">
 
             <h2>Tableau Visualizations</h2>
 
-        <div id="vizContainer"></div>
-        <script src="https://us-east-1.online.tableau.com/javascripts/api/tableau-2.min.js"></script>
-        <script>
-          var viz
-          function initViz() {
-            var containerDiv = document.getElementById("vizContainer"),
-            url = "https://public.tableau.com/views/World_Pop_Viz/ChangevsMedianAge?:language=en-US&:display_count=n&:origin=viz_share_link";
-      
-            viz = new tableau.Viz(containerDiv, url);
-          }
-          initViz();
-        </script>
-                    
+            <div id="vizContainer"></div>
+            <script src="https://us-east-1.online.tableau.com/javascripts/api/tableau-2.min.js"></script>
+            <script>
+                var viz
+                function initViz() {
+                    var containerDiv = document.getElementById("vizContainer"),
+                        url = "https://public.tableau.com/views/World_Pop_Viz/ChangevsMedianAge?:language=en-US&:display_count=n&:origin=viz_share_link";
+
+                    viz = new tableau.Viz(containerDiv, url);
+                }
+                initViz();
+            </script>
+
+
 
         </section>
         <section class="fragment fragment-five">
             <h3>Group</h3>
             <hr class="title-underline">
+        </section>
 
+        <section class="fragment fragment-onefour" id="signup">
+            <div class="container">
+                <h4>Group</h4>
+                <hr class="title-underline">
+            </div>
             <!-- Don't forget to swap out the universities and education to match your own-->
             <div class="container">
-                <h5> David Zellmer</h5>
-                <p class="credential"></p>
-                <p> <a href="https://github.com/rattrapp">Github</a>
-                </p>
                 <h5> Rosalie Maass</h5>
                 <p class="credential"></p>
-                <p> <a href="https://github.com/RosalieMaass">Github</a>
+                <p><a href="https://github.com/RosalieMaass">Github</a>
                 </p>
                 <h5> Dan Pederson</h5>
                 <p class="credential"></p>
                 <p> <a href="https://github.com/PirateSuit">Github</a>
+                </p>
+                <h5> David Zellmer</h5>
+                <p class="credential"></p>
+                <p> <a href="https://github.com/rattrapp">Github</a>
                 </p>
 
             </div>
@@ -139,6 +195,14 @@
     </main>
 
     <footer>
+        <section class="fragment-seven">
+            <div class="container">
+                <h4>Photos by</h4> <a href="https://freeimages.com/photographer/big_foot-36919">Chad Littlejohn</a> and
+                <a href="https://freeimages.com/photographer/aeropw-57666">P Widling</a> from <a
+                    href="https://freeimages.com">FreeImages</a>
+            </div>
+            <hr class="title-underline">
+        </section>
         <section class="fragment fragment-six">
             <div class="container">
                 <div class="row">

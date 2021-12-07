@@ -1,5 +1,6 @@
 html, body {
     font-family: 'Roboto', sans-serif;
+    background-color: #b9a47e;
  
 }
 
@@ -11,8 +12,9 @@ h1 {
 }
 
 h2 {
-    font-weight: 400;
-    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -21,7 +23,15 @@ h3 {
     font-size: 1.5rem;
     letter-spacing: 1px;
     text-align: center;
-    color: #0e5eab;
+    color: #000000;
+}
+
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #f08582;
 }
 
 h5 {
@@ -32,7 +42,16 @@ h7 {
     font-size: 2;
     text-align: center;
     max-width: 20px;
-    color:seagreen
+    color:rgb(0, 0, 0)
+}
+
+.viztext {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+
 }
 
 .btn-primary {
@@ -52,7 +71,7 @@ h7 {
     border: 0;
     height: 1px;
     background: #333;
-    background-image: linear-gradient(to right, #fff, #0e5eab, #fff);
+    background-image: linear-gradient(to right, rgb(0, 0, 0), #f39d9b, rgb(0, 0, 0));
     max-width: 350px;
     margin-bottom: 50px;
 }
@@ -66,14 +85,51 @@ h7 {
 }
 
 .fragment-one {
-    background-image: url("../images/map.jpeg"); 
+    background-image: url("../images/la_bg2.jpg"); 
     background-color: #fae4c9;
+    color: #3595cc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 250px 0;
+}
+
+.fragment-onetwo {
+    background-image: url("../images/nothing"); 
+    background-color: #3b2e1d;
     color: #f08582;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    padding: 250px 0;
+}
+
+.fragment-onethree {
+    background-image: url("../images/nothing"); 
+    background-color: #3b2e1d;
+    color: #f08582;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 300px 0;
+}
+
+.fragment-onefour {
+    background-image: url("../images/prairie.jpg"); 
+    background-color: #fae4c9;
+    color: #353535;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
 }
 
 .fragment-one h1 {
@@ -109,12 +165,12 @@ h7 {
 }
 
 .fragment-two p, .fragment-two i {
-    color: #0e5eab
+    color: #f08582;
 }
 
 .fragment-three {
-    background-color: #ffffff;
-    color: #0e5eab;
+    background-color: #b9a47e;
+    color: #f08582;
 }
 
 .fragment-three .carousel {
@@ -128,8 +184,8 @@ h7 {
     flex-direction: column
 }
 
-.fragment-three .carousel-caption {
-    color: #999
+.viztext-color {
+    color: rgb(0, 0, 0)
 }
 
 .fragment-three .custom-indicator {
@@ -167,9 +223,12 @@ h7 {
 
 
 .fragment-five {
-    background-color: #fee4c6;
-    padding: 50px;
-    color: #f84a12;
+    background-image: url("../images/prairie.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #3b2e1d;
+    padding: 100px;
+    color: #f08582;
     text-align: center; 
 }
 
@@ -187,14 +246,16 @@ h7 {
 
 .fragment-six {
     padding: 20px;
+    background-color:#3b2e1d;
 }
 
 .fragment-six h6 {
-    color: #f84a12;
+    color: #f08582;
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 20px;
+    background-color:#3b2e1d;
     /* letter-spacing: 2px; */
 }
 .fragment-six .social-icon {
@@ -209,10 +270,36 @@ h7 {
     font-size: 0.8rem;
 }
 
-.fragment-viz {
+.fragment-seven {
+    color: blanchedalmond;
     margin: auto;
-  width: 82%;
-  border: 3px solid green;
-  padding: 10px;
-  margin-bottom: 50px;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    background-color:#3b2e1d;
 }
+
+.fragment-viz {
+    background-color: #ffffff;
+    margin: auto;
+    width: 82%;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all ease .65s;
+    z-index: 100;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95)!important;
+}
+
+
+
+
