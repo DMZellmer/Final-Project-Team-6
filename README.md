@@ -1,7 +1,12 @@
+![la_bg2](https://user-images.githubusercontent.com/86331828/144959894-27847826-5b2b-4863-94df-44b529753de9.jpg)
+
+
+
 # Final Project
 
 ## Selected Topic
 ### World Population Data 
+[Group 6 World Population Website](https://piratesuit.github.io/)
 
 ### Description of source data
 
