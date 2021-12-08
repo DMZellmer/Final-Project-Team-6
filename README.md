@@ -11,7 +11,7 @@
 
 - Dataset: World Population 1960-2018, 2020
   - https://www.kaggle.com/imdevskp/world-population-19602018?select=pop_worldometer_data.csv
-- This dataset includes each country's population, yearly change percentage, net change, land area, migrants, fertility rate, median age, urban population percentage and world share percent as of 2020.
+- This dataset includes each country's population, yearly change percentage, net change, land area, population density, migrants, fertility rate, median age, urban population percentage and world share percent as of 2020.
 - This dataset includes additional csvs that include more specific data like female population percentage, population above age 65, population below age 14 and population density, all from between 1960-2017.
 
 ### Questions we hope to answer:
