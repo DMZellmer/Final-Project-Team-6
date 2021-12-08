@@ -90,4 +90,4 @@ This model performed well on the dataset, with an MSE logarithmically lower than
 
 ## Other Considerations
 - The Covid-19 pandemic made 2020 a unique year. 
-- If we were to do further analysis we would look at previous years data to see if fertility rate and median age were also the main contributers to population change or if 2020 was anomilly potentially due to the Covid-19 pandemic.
+- If we were to do further analysis we would look at previous years data to see if fertility rate and median age were also the main contributers to population change or if 2020 was anomaly potentially due to the Covid-19 pandemic.
