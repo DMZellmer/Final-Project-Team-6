@@ -2,18 +2,17 @@
 
 
 
-# Final Project
+# Final Project 
 
-## Selected Topic
-### World Population Data 
+## World Population Data 
 [Group 6 World Population Website](https://piratesuit.github.io/)
 
 ### Description of source data
 
 - Dataset: World Population 1960-2018, 2020
   - https://www.kaggle.com/imdevskp/world-population-19602018?select=pop_worldometer_data.csv
-- This dataset includes each countries population, net change, land area, migrants, fertility rate, median age, urban population and world share % as of 2020.
-- This dataset includes additional csvs that include more specific data like female population percentage, population above age 65, population below age 14 and population density, all from about 1960-2017.
+- This dataset includes each countries population, yearly change percentage, net change, land area, migrants, fertility rate, median age, urban population percentage and world share percent as of 2020.
+- This dataset includes additional csvs that include more specific data like female population percentage, population above age 65, population below age 14 and population density, all from between 1960-2017.
 
 ### Questions we hope to answer:
 
@@ -78,17 +77,17 @@ This model performed well on the dataset, with an MSE logarithmically lower than
 
 ## Additional Data
 
-- From the original dataset we pulled additional migrant data to see what the percentage of the yearly change and percentage of total population was from migrants. 
+- From the original dataset we pulled additional migrant data to see what the percentage of yearly change was from migrants as well as percentage of total population was from migrants. 
 - This information did not have a strong correlation with the other data.
 
 ## Summary of Results
 - When analyzing the data we found the two factors that seem to affect the percentage of yearly population change were fertiliy rate and median age. 
 - A higher fertility rate resulted in a higher percentage of yearly population change.
 - A higher median age resulted in a lower percentage of yearly population change.
-- The countries with the lowest fertility rates also had the lowest median age. 
+- The countries with the highest fertility rates also had the lowest median age. 
 - With the exception of fertility rate and median age, none of the other features showed a strong correlation to yearly population change percentage. 
 
 
 ## Other Considerations
 - The Covid-19 pandemic made 2020 a unique year. 
-- If we were to do further analysis we would use the trends seen in 2020 to compare to other years. Specifically looking at differences in fertility rate, median age, net change and number of migrants.
+- If we were to do further analysis we would use the trends seen in 2020 to compare to other years. Specifically looking at differences in fertility rate, median age, net population change and number of migrants.
